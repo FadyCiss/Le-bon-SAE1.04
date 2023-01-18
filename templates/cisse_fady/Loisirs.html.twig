@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {% block stylesheets %}
+			
+            <link rel= "stylesheet" href=https://bootswatch.com/5/quartz/bootstrap.min.css>
+			<link rel="stylesheet" href="css/style.css">
+            
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+    <body>
+    <style>
+
+            /* Add the following CSS to apply the background image */
+
+            body {
+
+                background-image: url('data:image/jpeg;base64,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');
+                background-size: cover;
+
+                background-repeat: no-repeat;
+
+            }
+
+        </style>
+        <nav class="cc-navbar navbar navbar-expand-lg navbar-dark position-fixed w-100">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-uppercase mx-4 py-3 fw-bolder" href="#">FADY CISSE</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item pe-4">
+                                <a class="nav-link active" aria-current="page" href="/">Accueil</a>
+                            </li>
+                            <li class="nav-item pe-4">
+                                <a class="nav-link" href="/moncv">Mon CV</a>
+                            </li>
+                            <li class="nav-item pe-4">
+                                <a class="nav-link" href="/Formulaire">Formulaire</a>
+                            </li> 
+                            <li class="nav-item pe-4">
+                                <a class="nav-link" href="Portfolio ">Portfolio</a>
+                            </li>
+							 <li class="nav-item pe-4">
+                                <a class="btn btn-order rounded-0" href="Loisirs">Loisirs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+				
+            </nav>
+            <br><br><br><br>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <title>Galerie d'images</title>
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+            $(document).ready(function() {
+                /*Initialisation du diaporama*/
+                var currentImage = 0;
+                var images = $("#slideshow img");
+                var lastImage = images.length - 1;
+                // Afficher la première image
+                images.hide();
+                images.eq(currentImage).show();
+                // Définir la fonction pour passer à l'image suivante
+                function nextImage() {
+                    images.eq(currentImage).fadeOut();
+                    if (currentImage < lastImage) {
+                        currentImage++;
+                    } else {
+                        currentImage = 0;
+                    }
+                    images.eq(currentImage).fadeIn();
+                }
+                // Définir la vitesse de défilement
+                var intervalId = setInterval(nextImage, 3000);
+                // Ajouter des boutons de contrôle pour accélérer ou ralentir la vitesse de défilement
+                $("#slideshow-controls .faster").click(function() {
+                    clearInterval(intervalId);
+                    intervalId = setInterval(nextImage, 2000);
+                });
+                $("#slideshow-controls .slower").click(function() {
+                    clearInterval(intervalId);
+                    intervalId = setInterval(nextImage, 4000);
+                });
+            });
+         </script>
+
+         <section class="banner d-flex justify-content-center align-items-center pt-5">
+            <div class="container my-5 py-5">
+                  
+                <div class="row">
+                    <div class="col-md-6"> 
+                    <p class="text-capitalize py-3 redressed">
+                        
+                        <a class="navbar-brand text-uppercase mx-4 py-3 fw-bolder">
+                            <div id="slideshow" class="img-gallery" align-item="left">
+
+                                <img src="image/IMG-3907.JPG" alt="Image 1" width="500px" height="600px">
+                                <img src={{asset('image/ba.jpg')}} alt="Image 4" width="500px" height="600px">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmqHnwj9axqfslTmvrlL40HjNVODrDyixAkvLJ-D6sJpINci4cvunWuwhw3_2ltN8u7Cg&usqp=CAU" alt="Image 6" width="500px" height="600px">
+                                <img src="image/cisse.jpg" alt="Image 2" width="500px" height="600px">
+                                <img src="image/IMG-3527.jpg" alt="Image 3" width="500px" height="600px">
+                                <img src="image/ba.jpg" alt="Image 4" width="500px" height="600px">
+                                <img src="image/aissatou.JPG" alt="Image 5" width="500px" height="600px">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmqHnwj9axqfslTmvrlL40HjNVODrDyixAkvLJ-D6sJpINci4cvunWuwhw3_2ltN8u7Cg&usqp=CAU" alt="Image 6" width="500px" height="600px">
+                                <img src="image/Sall.jpg" alt="Image 7" width="500px" height="600px">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG8SRy4hZ-EqcDP4UyAzNDPO0hv8rW-6_uZA&usqp=CAU" alt="Image 8" width="500px" height="600px">
+                                <img src="image/IMG-3907.JPG" alt="Image 1" width="500px" height="600px">
+                                <img src="image/ba.jpg" alt="Image 4" width="500px" height="600px">
+                                <img src="image/cisse.jpg" alt="Image 2" width="500px" height="600px">
+                                <img src="image/IMG-3527.jpg" alt="Image 3" width="500px" height="600px">
+                            </div>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-6"> 
+                    <p class="text-capitalize py-3 redressed">
+                        <p style="float:right;" style="font-size:100px;"><i><br>J'aime bien aller dans un parc me balader, m'amuser avec mes amis</i><p> 
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>

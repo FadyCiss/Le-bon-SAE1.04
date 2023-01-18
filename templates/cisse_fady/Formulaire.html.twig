@@ -17,23 +17,33 @@
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
-    <body>
-	 <style>
 
-            /* Add the following CSS to apply the background image */
+    <body>
+        <style>
+            .heading {
+                text-align:center;
+
+            }
+            contact .row{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                text-align: center;
+            }
+
+                /* Add the following CSS to apply the background image */
 
             body {
 
-                background-image: url('https://www.computerland.fr/wp-content/uploads/2017/12/Cablage-informatique-cuivre-fibre-optique-et-telecom.jpg');
+                background-image: url('https://www.obernai.fr/dynamic/images/au_quotidien/reseaux_et_telecommunications/cac_/fotolia_133383460__sdecoret!_800x480!_3!_0x0!_0!_FFFFFF.jpg');
 
                 background-size: cover;
 
                 background-repeat: no-repeat;
 
             }
-
         </style>
-	</style>
         <nav class="cc-navbar navbar navbar-expand-lg navbar-dark position-fixed w-100">
                 <div class="container-fluid">
                     <a class="navbar-brand text-uppercase mx-4 py-3 fw-bolder" href="#">FADY CISSE</a>
@@ -60,73 +70,40 @@
                                 <a class="nav-link" href="/Formulaire">Formulaire</a>
                             </li> 
                             <li class="nav-item pe-4">
-                                <a class="btn btn-order rounded-0" href="#">Portfoliodecompétences</a>
+                                <a class="nav-link" href="Portfolio ">Portfolio</a>
+                            </li>
+							 <li class="nav-item pe-4">
+                                <a class="btn btn-order rounded-0" href="Loisirs">Loisirs</a>
                             </li>
                         </ul>
                     </div>
                 </div>
 				
-           <!DOCTYPE html>
-<html>
-<head>
-  <title>Page d'accueil</title>
-  <style>
-    /* Styles pour toute la page */
-    body {
-      margin: 0;
-      padding: 0;
-    }
+            </nav>
+            <br><br><br><br><br><br>
 
-    /* Styles pour la section des informations personnelles */
-    #personal-info {
-      background-color: #f1c40f;
-      color: white;
-      padding: 1em;
-    }
 
-    /* Styles pour la section de la formation */
-    #education {
-      margin: 2em;
-    }
 
-    /* Styles pour la section des loisirs */
-    #hobbies {
-      background-color: #3498db;
-      color: white;
-      padding: 1em;
-    }
+        <section class="contact" id="contact">
+            <h1 class="heading"><span>Formulaire</span></h1>
 
-    /* Styles pour le pied de page */
-    footer {
-      background-color: #34495e;
-      color: white;
-      text-align: center;
-      padding: 1em;
-    }
-  </style>
-</head>
-<body>
-  <section id="personal-info">
-    <h2>Informations personnelles</h2>
-    <p>Nom : John Doe</p>
-    <p>Prénom : John</p>
-    <p>Mail : john.doe@example.com</p>
-    <p>Numéro de téléphone : 555-555-5555</p>
-  </section>
-  <section id="education">
-    <h2>Formation</h2>
-    <p>Diplôme en ingénierie informatique, Université XYZ, Année de graduation : 2022.</p>
-    <h3>Phrase d'accroche :</h3>
-    <p>Je suis un ingénieur informatique passionné et motivé, prêt à relever de nouveaux défis.</p>
-  </section>
-  <section id="hobbies">
-    <h2>Loisirs</h2>
-    <p>J'aime passer mon temps libre à jouer au football, à la guitare et à voyager.</p>
-  </section>
-  <footer>
-    <p>Protection des données personnelles</p>
-  </footer>
-</body>
+            <div class="row" style="align-item:center;">
+                <form action="">
+
+                    <input type="text" placeholder="name" class="box" style=""><br><br>
+                    <input type="email" placeholder="email" class="box"><br><br>
+                    <input type="email" placeholder="phone" class="box"><br><br>
+                    <input type="text" placeholder="project" class="box"><br><br>
+                    <textarea name="" id="" cols="20" rows="5" class="box message" placeholder="message"></textarea>
+                    <p class="nav-item pe-4">
+                        <p class="btn btn-order rounded-0"><button type="submit" class="btn" style="color:black;"><a href="../BUTRTC.V..pdf" download>send<i class="fas fa-paper-plane"></i></a></button>
+                    </p>
+                    Télécharger CV
+                </form>
+
+            </div>
+
+        </section>
+    </body>
 </html>
 
-Il est important de noter que ce code n'est qu'un exemple de base qui peut être modifié pour répondre à vos besoins spécifiques. Il est également possible d'utiliser des frameworks CSS tels que Bootstrap ou Foundation pour créer un design plus avancé.

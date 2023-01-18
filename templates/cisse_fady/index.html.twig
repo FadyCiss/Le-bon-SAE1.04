@@ -51,7 +51,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item pe-4">
-                                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                                <a class="nav-link active" aria-current="page" href="/">Accueil</a>
                             </li>
                             <li class="nav-item pe-4">
                                 <a class="nav-link" href="/moncv">Mon CV</a>
@@ -60,73 +60,69 @@
                                 <a class="nav-link" href="/Formulaire">Formulaire</a>
                             </li> 
                             <li class="nav-item pe-4">
-                                <a class="btn btn-order rounded-0" href="#">Portfoliodecompétences</a>
+                                <a class="nav-link" href="Portfolio ">Portfolio</a>
+                            </li>
+							 <li class="nav-item pe-4">
+                                <a class="btn btn-order rounded-0" href="Loisirs">Loisirs</a>
                             </li>
                         </ul>
                     </div>
                 </div>
 				
-           <!DOCTYPE html>
-<html>
-<head>
-  <title>Page d'accueil</title>
-  <style>
-    /* Styles pour toute la page */
-    body {
-      margin: 0;
-      padding: 0;
-    }
+            </nav>
+            <section class="banner d-flex justify-content-center align-items-center pt-5">
+			<div class="container my-5 py-5">
+				<div class="row">
+					<div class="col-md-6"></div>
+					<div class="col-md-6 banner-desc lh-lg">
+						<h1 class="text-capitalize py-3 redressed">
+							I am a student in Networks and telecommunications I am ready to do anything to achieve my goals
 
-    /* Styles pour la section des informations personnelles */
-    #personal-info {
-      background-color: #f1c40f;
-      color: white;
-      padding: 1em;
-    }
+ <br />
+					    
+					
+						</h1>
+						<p>
+		
+					</div>
+				</div>
+			</div>
+		</section>
 
-    /* Styles pour la section de la formation */
-    #education {
-      margin: 2em;
-    }
-
-    /* Styles pour la section des loisirs */
-    #hobbies {
-      background-color: #3498db;
-      color: white;
-      padding: 1em;
-    }
-
-    /* Styles pour le pied de page */
-    footer {
-      background-color: #34495e;
-      color: white;
-      text-align: center;
-      padding: 1em;
-    }
-  </style>
-</head>
-<body>
-  <section id="personal-info">
-    <h2>Informations personnelles</h2>
-    <p>Nom : John Doe</p>
-    <p>Prénom : John</p>
-    <p>Mail : john.doe@example.com</p>
-    <p>Numéro de téléphone : 555-555-5555</p>
-  </section>
-  <section id="education">
-    <h2>Formation</h2>
-    <p>Diplôme en ingénierie informatique, Université XYZ, Année de graduation : 2022.</p>
-    <h3>Phrase d'accroche :</h3>
-    <p>Je suis un ingénieur informatique passionné et motivé, prêt à relever de nouveaux défis.</p>
-  </section>
-  <section id="hobbies">
-    <h2>Loisirs</h2>
-    <p>J'aime passer mon temps libre à jouer au football, à la guitare et à voyager.</p>
-  </section>
-  <footer>
-    <p>Protection des données personnelles</p>
-  </footer>
-</body>
+		<section class="available merriweather py-5">
+			<div class="container">
+				<div class="row">
+					<div class="card mb-3 border-0 rounded-0">
+						<div class="row">
+							<div class="col-md-6">
+							<br>
+								<img src="/image/fady.JPG"width="50%" height="80%";>
+							</div>
+							<!DOCTYPE html>
+              <html>
+                    <head>
+                     <title>My PERSONEL INFORMATION</title>
+                </head>
+                <body>
+                <h1>MY PERSONEL INFORMATION</h1>
+                <ul>
+                <li>Name: CISSE</li>
+                <li>First name: FADY</li>
+                <li>Ville: Roanne</li>
+                <li>Postal code: 42300</li>
+                <li>telephone number: 07 74 87 68 44</li>
+                <li>E-mail: fadycisse075@gmail.com</li>
+                
+    </ul>
+    <li class="nav-item pe-4">
+                                <a class="btn btn-order rounded-0" href="Loisirs">Loisirs</a>
+                            </li>
+  </body>
 </html>
 
-Il est important de noter que ce code n'est qu'un exemple de base qui peut être modifié pour répondre à vos besoins spécifiques. Il est également possible d'utiliser des frameworks CSS tels que Bootstrap ou Foundation pour créer un design plus avancé.
+				</div>
+				
+			  
+        {% block body %}{% endblock %}
+    </body>
+</html> 

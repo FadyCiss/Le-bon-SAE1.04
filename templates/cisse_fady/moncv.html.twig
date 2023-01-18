@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html>
+    <head>
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
@@ -17,14 +19,13 @@
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
-    <body>
-	 <style>
+     <style>
 
             /* Add the following CSS to apply the background image */
 
             body {
 
-                background-image: url('https://www.computerland.fr/wp-content/uploads/2017/12/Cablage-informatique-cuivre-fibre-optique-et-telecom.jpg');
+                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGt9mYP2Cw32pcG9PjESQXAGocN4sPiQCQyQ&usqp=CAU');
 
                 background-size: cover;
 
@@ -34,7 +35,7 @@
 
         </style>
 	</style>
-        <nav class="cc-navbar navbar navbar-expand-lg navbar-dark position-fixed w-100">
+  <nav class="cc-navbar navbar navbar-expand-lg navbar-dark position-fixed w-100">
                 <div class="container-fluid">
                     <a class="navbar-brand text-uppercase mx-4 py-3 fw-bolder" href="#">FADY CISSE</a>
                     <button
@@ -51,7 +52,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item pe-4">
-                                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                                <a class="nav-link active" aria-current="page" href="/">Accueil</a>
                             </li>
                             <li class="nav-item pe-4">
                                 <a class="nav-link" href="/moncv">Mon CV</a>
@@ -60,16 +61,20 @@
                                 <a class="nav-link" href="/Formulaire">Formulaire</a>
                             </li> 
                             <li class="nav-item pe-4">
-                                <a class="btn btn-order rounded-0" href="#">Portfoliodecompétences</a>
+                                <a class="nav-link" href="Portfolio ">Portfolio</a>
+                            </li>
+							 <li class="nav-item pe-4">
+                                <a class="btn btn-order rounded-0" href="Loisirs">Loisirs</a>
                             </li>
                         </ul>
                     </div>
                 </div>
 				
-           <!DOCTYPE html>
+            </nav>
+     <<!DOCTYPE html>
 <html>
 <head>
-  <title>Page d'accueil</title>
+  <title>CV</title>
   <style>
     /* Styles pour toute la page */
     body {
@@ -77,56 +82,36 @@
       padding: 0;
     }
 
-    /* Styles pour la section des informations personnelles */
-    #personal-info {
-      background-color: #f1c40f;
-      color: white;
-      padding: 1em;
-    }
-
-    /* Styles pour la section de la formation */
-    #education {
-      margin: 2em;
-    }
-
-    /* Styles pour la section des loisirs */
-    #hobbies {
+    /* Styles pour l'entête */
+    header {
       background-color: #3498db;
-      color: white;
-      padding: 1em;
-    }
-
-    /* Styles pour le pied de page */
-    footer {
-      background-color: #34495e;
       color: white;
       text-align: center;
       padding: 1em;
     }
+
+    /* Styles pour les sections */
+    section {
+      margin: 2em;
+    }
   </style>
+  <br><br><br><br><br>
 </head>
 <body>
-  <section id="personal-info">
-    <h2>Informations personnelles</h2>
-    <p>Nom : John Doe</p>
-    <p>Prénom : John</p>
-    <p>Mail : john.doe@example.com</p>
-    <p>Numéro de téléphone : 555-555-5555</p>
-  </section>
-  <section id="education">
+  <header>
+    <h1>Job: Administration Réseaux</h1>
+  </header>
+  <section>
     <h2>Formation</h2>
-    <p>Diplôme en ingénierie informatique, Université XYZ, Année de graduation : 2022.</p>
-    <h3>Phrase d'accroche :</h3>
-    <p>Je suis un ingénieur informatique passionné et motivé, prêt à relever de nouveaux défis.</p>
+    <p>BUT Réseaux et Télécommunication</p>
   </section>
-  <section id="hobbies">
-    <h2>Loisirs</h2>
-    <p>J'aime passer mon temps libre à jouer au football, à la guitare et à voyager.</p>
+  <section>
+    <h2>Expérience professionnelle</h2>
+    <p>Contenu de la section Expérience professionnelle</p>
   </section>
-  <footer>
-    <p>Protection des données personnelles</p>
-  </footer>
+  <section>
+    <h2>Compétence</h2>
+    <p>Contenu de la section Compétence</p>
+  </section>
 </body>
 </html>
-
-Il est important de noter que ce code n'est qu'un exemple de base qui peut être modifié pour répondre à vos besoins spécifiques. Il est également possible d'utiliser des frameworks CSS tels que Bootstrap ou Foundation pour créer un design plus avancé.
