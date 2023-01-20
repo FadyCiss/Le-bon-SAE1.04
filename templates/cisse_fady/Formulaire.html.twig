@@ -61,7 +61,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item pe-4">
-                                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                                <a class="nav-link active" aria-current="page" href="/">Accueil</a>
                             </li>
                             <li class="nav-item pe-4">
                                 <a class="nav-link" href="/moncv">Mon CV</a>
@@ -72,8 +72,6 @@
                             <li class="nav-item pe-4">
                                 <a class="nav-link" href="Portfolio ">Portfolio</a>
                             </li>
-							 <li class="nav-item pe-4">
-                                <a class="btn btn-order rounded-0" href="Loisirs">Loisirs</a>
                             </li>
                         </ul>
                     </div>
@@ -90,15 +88,17 @@
             <div class="row" style="align-item:center;">
                 <form action="">
 
-                    <input type="text" placeholder="name" class="box" style=""><br><br>
-                    <input type="email" placeholder="email" class="box"><br><br>
-                    <input type="email" placeholder="phone" class="box"><br><br>
-                    <input type="text" placeholder="project" class="box"><br><br>
-                    <textarea name="" id="" cols="20" rows="5" class="box message" placeholder="message"></textarea>
+                        <input type="text" placeholder="name" class="box" style="" required>
+                    <input type="email" placeholder="email" class="box" required>      
+
+                    <input type="phone" placeholder="phone" class="box" required>
+                    <input type="text" placeholder="project" class="box" required
+                    >
+                    <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message" required></textarea>
                     <p class="nav-item pe-4">
-                        <p class="btn btn-order rounded-0"><button type="submit" class="btn" style="color:black;"><a href="../BUTRTC.V..pdf" download>send<i class="fas fa-paper-plane"></i></a></button>
+                        <p class="btn btn-order rounded-0"><button type="submit" class="btn" style="color:black;"><a href="/Fady_CV.pdf" target="_blank" download>Télécharger CV<i class="fas fa-paper-plane"></i></a></button>
+
                     </p>
-                    Télécharger CV
                 </form>
 
             </div>

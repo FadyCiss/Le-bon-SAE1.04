@@ -43,4 +43,11 @@ class CisseFadyController extends AbstractController
             'controller_name' => 'CisseFadyController',
         ]);
     }
+    #[Route('/Fady_CV.pdf', name: '')]
+    public function Fady_CV (): Response
+    {
+        return $this->render('cisse_fady/Formulaire.html.twig', [
+            'controller_name' => 'CisseFadyController',
+        ]);
+    }
 }
