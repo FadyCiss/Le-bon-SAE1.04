@@ -50,4 +50,11 @@ class CisseFadyController extends AbstractController
             'controller_name' => 'CisseFadyController',
         ]);
     }
+    #[Route('/modification', name: 'modification')]
+    public function modification(): Response
+    {
+        return $this->render('cisse_fady/modification.html.twig', [
+            'controller_name' => 'CisseFadyController',
+        ]);
+    }
 }

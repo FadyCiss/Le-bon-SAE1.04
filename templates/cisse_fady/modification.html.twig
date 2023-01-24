@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {% block stylesheets %}
+			
+            <link rel= "stylesheet" href=https://bootswatch.com/5/quartz/bootstrap.min.css>
+			<link rel="stylesheet" href="css/style.css">
+            
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+     <style>
+
+            /* Add the following CSS to apply the background image */
+
+            body {
+
+                background-image: url('https://thumbs.dreamstime.com/b/homme-d-affaires-utilisant-le-t%C3%A9l%C3%A9phone-portable-avec-le-r%C3%A9seau-de-t%C3%A9l%C3%A9com-d-antenne-parabolique-sur-la-tour-de-73406034.jpg');
+
+                background-size: cover;
+
+                background-repeat: no-repeat;
+
+            }
+            .phto{
+              text-align:left;
+            }
+
+        </style>
+	</style>
+  <nav class="cc-navbar navbar navbar-expand-lg navbar-dark position-fixed w-100">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-uppercase mx-4 py-3 fw-bolder" href="#">FADY CISSE</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item pe-4">
+                                <a class="nav-link active" aria-current="page" href="/">Accueil</a>
+                            </li>
+                            <li class="nav-item pe-4">
+                                <a class="nav-link" href="/moncv">Mon CV</a>
+                            </li>
+                            <li class="nav-item pe-4">
+                                <a class="nav-link" href="/Formulaire">Formulaire</a>
+                            </li> 
+                            <li class="nav-item pe-4">
+                                <a class="nav-link" href="Portfolio ">Portfolio</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+				
+            </nav>
